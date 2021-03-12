@@ -77,7 +77,7 @@ class _RegisterState extends State<Register> {
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
                         prefixIcon: Icon(Icons.person),
-                        hintText: 'Username',
+                        hintText: 'Email',
                       ),
                       validator: (value) {
                         if (value.isEmpty) return 'Please enter some text';
@@ -99,7 +99,7 @@ class _RegisterState extends State<Register> {
                         borderRadius: BorderRadius.all(Radius.circular(10.0)),
                       ),
                       prefixIcon: Icon(Icons.person),
-                      hintText: 'Email',
+                      hintText: 'Username',
                     ),
                     validator: (value) {
                       if (value.isEmpty) return 'Please enter some text';
