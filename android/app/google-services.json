@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "609673395925",
+    "project_id": "psl-prediction-726c3",
+    "storage_bucket": "psl-prediction-726c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609673395925:android:bcdd396dcfd3b0b88f6c5c",
+        "android_client_info": {
+          "package_name": "com.example.psl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609673395925-l1g9hh2sj5v8oa3dg27teq05luuc6i28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6ql3c1zQ3smXByTqsmy2KnhMY2SzW7lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609673395925-l1g9hh2sj5v8oa3dg27teq05luuc6i28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
