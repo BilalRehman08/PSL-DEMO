@@ -38,7 +38,12 @@ class _RegisterState extends State<Register> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text('REGISTER PAGEE')),
+        ),
+        backgroundColor: Colors.white,
         body: Form(
           key: _formKey,
           child: Padding(
@@ -46,22 +51,25 @@ class _RegisterState extends State<Register> {
             child: SingleChildScrollView(
               child: Column(children: <Widget>[
                 SizedBox(
-                  height: 30,
+                  height: 70,
                 ),
-                Container(
-                  margin: EdgeInsets.only(top: 0.0),
-                  child: Text('REGISTER',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.red)),
+                Center(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.32,
+                    height: MediaQuery.of(context).size.height * 0.15,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("images/psl.png"),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
                 ),
                 SizedBox(
-                  height: 30.0,
+                  height: 30,
                 ),
                 Material(
-                  elevation: 2,
+                  elevation: 4,
                   child: TextFormField(
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
@@ -80,6 +88,42 @@ class _RegisterState extends State<Register> {
                           _email = value.trim();
                         });
                       }),
+                ),
+                SizedBox(height: 10.0),
+                Material(
+                  elevation: 4,
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey[300]),
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      ),
+                      prefixIcon: Icon(Icons.person),
+                      hintText: 'Email',
+                    ),
+                    validator: (value) {
+                      if (value.isEmpty) return 'Please enter some text';
+                      return null;
+                    },
+                  ),
+                ),
+                SizedBox(height: 10.0),
+                Material(
+                  elevation: 4,
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey[300]),
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                      ),
+                      prefixIcon: Icon(Icons.person),
+                      hintText: 'Contact',
+                    ),
+                    validator: (value) {
+                      if (value.isEmpty) return 'Please enter some text';
+                      return null;
+                    },
+                  ),
                 ),
                 SizedBox(height: 10.0),
                 Material(
@@ -113,12 +157,12 @@ class _RegisterState extends State<Register> {
                         signup();
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.red,
+                        primary: Colors.green,
                       ),
                       child: Text('REGISTER',
                           style: TextStyle(color: Colors.white)),
                     )),
-                Divider(height: 40.0, thickness: 0.70, color: Colors.red),
+                Divider(height: 40.0, thickness: 0.70, color: Colors.green),
               ]),
             ),
           ),

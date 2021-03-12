@@ -39,6 +39,10 @@ class _LoginState extends State<Login> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text('LOGIN PAGEE')),
+        ),
+        backgroundColor: Colors.white,
         body: Form(
           key: _formKey,
           child: Padding(
@@ -46,7 +50,7 @@ class _LoginState extends State<Login> {
             child: SingleChildScrollView(
               child: Column(children: <Widget>[
                 SizedBox(
-                  height: 100,
+                  height: 70,
                 ),
                 Center(
                   child: Container(
@@ -61,10 +65,10 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 SizedBox(
-                  height: 50,
+                  height: 30,
                 ),
                 Material(
-                  elevation: 2,
+                  elevation: 4,
                   child: TextFormField(
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
@@ -72,7 +76,7 @@ class _LoginState extends State<Login> {
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
                         prefixIcon: Icon(Icons.person),
-                        hintText: 'Username',
+                        hintText: 'Email',
                       ),
                       validator: (value) {
                         if (value.isEmpty) return 'Please enter some text';
@@ -117,7 +121,7 @@ class _LoginState extends State<Login> {
                       },
                       // SignIn,
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.red,
+                        primary: Colors.green,
                       ),
 
                       child:
@@ -136,13 +140,13 @@ class _LoginState extends State<Login> {
                       },
                       // SignIn,
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.red,
+                        primary: Colors.green,
                       ),
 
                       child: Text('REGISTER',
                           style: TextStyle(color: Colors.white)),
                     )),
-                Divider(height: 40.0, thickness: 0.70, color: Colors.red),
+                Divider(height: 40.0, thickness: 0.70, color: Colors.green),
               ]),
             ),
           ),
