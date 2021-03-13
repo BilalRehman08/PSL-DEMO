@@ -10,6 +10,7 @@ class Register extends StatefulWidget {
 class _RegisterState extends State<Register> {
   String _email;
   String _password;
+  bool loginacc = false;
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   Future<void> signup() async {
@@ -23,6 +24,9 @@ class _RegisterState extends State<Register> {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => Home()));
       } on FirebaseAuthException catch (e) {
+        setState(() {
+          loginacc = true;
+        });
         if (e.code == 'weak-password') {
           print('The password provided is too weak.');
         } else if (e.code == 'email-already-in-use') {
@@ -72,7 +76,7 @@ class _RegisterState extends State<Register> {
                   elevation: 4,
                   child: TextFormField(
                       decoration: InputDecoration(
-                        errorText: true ? 'Invalid Email' : null,
+                        errorText: loginacc ? 'Invalid Email' : null,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey[300]),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -132,7 +136,7 @@ class _RegisterState extends State<Register> {
                   child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
-                        errorText: true ? 'Password too small' : null,
+                        errorText: loginacc ? 'Password too small' : null,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey[300]),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
