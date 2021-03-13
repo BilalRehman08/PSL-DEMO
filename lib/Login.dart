@@ -71,6 +71,7 @@ class _LoginState extends State<Login> {
                   elevation: 4,
                   child: TextFormField(
                       decoration: InputDecoration(
+                        errorText: true ? 'User not found' : null,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey[300]),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -94,6 +95,7 @@ class _LoginState extends State<Login> {
                   child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
+                        errorText: true ? 'password not match' : null,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey[300]),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),

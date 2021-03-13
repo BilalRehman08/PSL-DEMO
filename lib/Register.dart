@@ -72,6 +72,7 @@ class _RegisterState extends State<Register> {
                   elevation: 4,
                   child: TextFormField(
                       decoration: InputDecoration(
+                        errorText: true ? 'Invalid Email' : null,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey[300]),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -131,6 +132,7 @@ class _RegisterState extends State<Register> {
                   child: TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
+                        errorText: true ? 'Password too small' : null,
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey[300]),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
