@@ -1,9 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:psl/Login.dart';
 import 'package:psl/idividual.dart';
-import 'package:psl/teamss.dart';
+import 'package:psl/batsman.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -139,7 +138,7 @@ class _HomeState extends State<Home> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Teammss())),
+                                      builder: (context) => Batsmans())),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
                                 height:

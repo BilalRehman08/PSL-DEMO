@@ -1,7 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:psl/Login.dart';
+import 'package:psl/fielders.dart';
 import 'package:psl/home.dart';
+import 'package:psl/batsman.dart';
 
 class Individual extends StatefulWidget {
   @override
@@ -76,7 +78,7 @@ class _IndividualState extends State<Individual> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Login())),
+                                      builder: (context) => Batsmans())),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
                                 height:
@@ -170,7 +172,7 @@ class _IndividualState extends State<Individual> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Login())),
+                                      builder: (context) => Fielders())),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
                                 height:

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Teammss extends StatefulWidget {
+class Batsmans extends StatefulWidget {
   @override
-  _TeammssState createState() => _TeammssState();
+  _BatsmansState createState() => _BatsmansState();
 }
 
-class _TeammssState extends State<Teammss> {
+class _BatsmansState extends State<Batsmans> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
