@@ -41,7 +41,7 @@ class _RegisterState extends State<Register> {
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('REGISTER PAGEE')),
+          title: Center(child: Text('REGISTER PAGE')),
         ),
         backgroundColor: Colors.white,
         body: Form(
@@ -51,22 +51,22 @@ class _RegisterState extends State<Register> {
             child: SingleChildScrollView(
               child: Column(children: <Widget>[
                 SizedBox(
-                  height: 70,
+                  height: 40,
                 ),
                 Center(
                   child: Container(
-                    width: MediaQuery.of(context).size.width * 0.32,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    width: MediaQuery.of(context).size.width * 0.27,
+                    height: MediaQuery.of(context).size.height * 0.23,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("images/psl.png"),
+                        image: AssetImage("images/psl.jpeg"),
                         fit: BoxFit.cover,
                       ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Material(
                   elevation: 4,

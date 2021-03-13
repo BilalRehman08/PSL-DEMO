@@ -40,7 +40,7 @@ class _LoginState extends State<Login> {
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text('LOGIN PAGEE')),
+          title: Center(child: Text('LOGIN PAGE')),
         ),
         backgroundColor: Colors.white,
         body: Form(
@@ -50,22 +50,22 @@ class _LoginState extends State<Login> {
             child: SingleChildScrollView(
               child: Column(children: <Widget>[
                 SizedBox(
-                  height: 70,
+                  height: 40,
                 ),
                 Center(
                   child: Container(
-                    width: MediaQuery.of(context).size.width * 0.32,
-                    height: MediaQuery.of(context).size.height * 0.15,
+                    width: MediaQuery.of(context).size.width * 0.27,
+                    height: MediaQuery.of(context).size.height * 0.23,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage("images/psl.png"),
+                        image: AssetImage("images/psl.jpeg"),
                         fit: BoxFit.cover,
                       ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Material(
                   elevation: 4,

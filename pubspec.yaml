@@ -51,6 +51,7 @@ flutter:
   assets:
   
     - images/psl.png
+    - images/psl.jpeg
     - images/guide.png
     - images/individual.png
     - images/fielder.png
