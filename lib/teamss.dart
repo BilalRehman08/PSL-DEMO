@@ -8,16 +8,110 @@ class Teammss extends StatefulWidget {
 class _TeammssState extends State<Teammss> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        children: [
-          cardd(
-              'ABC',
-              'https://superstarsbio.com/wp-content/uploads/2018/08/Shoaib-Malik.png',
-              's',
-              's',
-              's')
-        ],
+    return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.green),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text("TOP 10 BATSMANS")),
+        ),
+        body: ListView(
+          children: [
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'BABAR AZAM (KK)',
+                'https://superstarsbio.com/wp-content/uploads/2018/08/Babar-Azam.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'FAKHAR ZAMAN (LQ)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/Fakhar-Zaman-1-450x480.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'MUHAMMAD HAFEEZ (LQ)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/Mohammad-Hafeez.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'BEN DUNK (LQ)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/Ben-Dunk.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'CHRIS LYNN (LQ)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/Chris-Lynn.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'SHAN MASOOD (MS)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/Shan-Masood-1.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'SHOAIB MALIK (PZ)',
+                'https://superstarsbio.com/wp-content/uploads/2018/08/Shoaib-Malik.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'ALEX HALES (KK)',
+                'https://i.dailymail.co.uk/1s/2019/04/26/19/12760104-6964291-England_star_Alex_Hales_has_been_slapped_with_a_21_day_ban_for_u-a-13_1556302324727.jpg',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'LUKE RONCHI (IU)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/Luke-Ronchi-1.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+            cardd(
+                'SHADAB KHAN (IU)',
+                'https://superstarsbio.com/wp-content/uploads/2020/02/shadab-khan.png',
+                'Innings: ',
+                'Runs(balls): ',
+                'Strike Rate: '),
+            SizedBox(
+              height: 10,
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -68,13 +162,6 @@ Widget cardd(String name, String image, String runs, String match, String sr) {
                         TextSpan(
                             text: runs,
                             style: TextStyle(color: Colors.black54)),
-                        TextSpan(
-                          text: '   \$90',
-                          style: TextStyle(
-                              color: Colors.red,
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold),
-                        ),
                       ]),
                 ),
                 SizedBox(height: 10),
