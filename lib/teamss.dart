@@ -11,15 +11,19 @@ class _TeammssState extends State<Teammss> {
     return Scaffold(
       body: ListView(
         children: [
-          cardd('ABC',
-              'https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg')
+          cardd(
+              'ABC',
+              'https://superstarsbio.com/wp-content/uploads/2018/08/Shoaib-Malik.png',
+              's',
+              's',
+              's')
         ],
       ),
     );
   }
 }
 
-Widget cardd(String name, String image) {
+Widget cardd(String name, String image, String runs, String match, String sr) {
   return Card(
     child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
       SizedBox(height: 10),
@@ -51,14 +55,8 @@ Widget cardd(String name, String image) {
                   text: TextSpan(
                       //style: Theme.of(context).textTheme.body1,
                       children: [
-                        WidgetSpan(
-                            child: Icon(
-                          Icons.star,
-                          size: 17,
-                          color: Colors.yellowAccent,
-                        )),
                         TextSpan(
-                            text: ' 5.0 (23 Review)',
+                            text: match,
                             style: TextStyle(color: Colors.black54)),
                       ]),
                 ),
@@ -68,7 +66,7 @@ Widget cardd(String name, String image) {
                       //style: Theme.of(context).textTheme.body1,
                       children: [
                         TextSpan(
-                            text: '20 Pieces',
+                            text: runs,
                             style: TextStyle(color: Colors.black54)),
                         TextSpan(
                           text: '   \$90',
@@ -81,7 +79,7 @@ Widget cardd(String name, String image) {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'Quantity: 1',
+                  sr,
                   style: TextStyle(color: Colors.black54),
                 )
               ]))
