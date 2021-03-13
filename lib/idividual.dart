@@ -1,15 +1,14 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:psl/Login.dart';
-import 'package:psl/idividual.dart';
+import 'package:psl/home.dart';
 
-class Home extends StatefulWidget {
+class Individual extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _IndividualState createState() => _IndividualState();
 }
 
-class _HomeState extends State<Home> {
+class _IndividualState extends State<Individual> {
   Future<void> _signOut() async {
     await FirebaseAuth.instance.signOut();
     Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
@@ -49,31 +48,17 @@ class _HomeState extends State<Home> {
                           color: Colors.white,
                         ),
                         onPressed: () {
-                          // Navigator.push(context,
-                          //     MaterialPageRoute(builder: (context) => Login()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Home()));
                         },
                       ),
                       SizedBox(width: 10),
-                      Text('Home',
+                      Text('INDIVIDUAL PERFOMANCES',
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 30,
+                              fontSize: 23,
                               fontWeight: FontWeight.bold)),
                     ]),
-                    CircleAvatar(
-                      radius: 20,
-                      child: IconButton(
-                        onPressed: () {
-                          _signOut();
-                        },
-                        icon: Icon(
-                          Icons.logout,
-                          size: 30,
-                          color: Colors.red,
-                        ),
-                      ),
-                      backgroundColor: Colors.white,
-                    ),
                   ],
                 ),
                 SizedBox(height: 20),
@@ -103,21 +88,21 @@ class _HomeState extends State<Home> {
                                       child: Container(
                                         width:
                                             MediaQuery.of(context).size.width *
-                                                0.32,
+                                                0.23,
                                         height:
                                             MediaQuery.of(context).size.height *
-                                                0.11,
+                                                0.135,
                                         decoration: BoxDecoration(
                                           image: DecorationImage(
-                                            image:
-                                                AssetImage("images/guide.png"),
+                                            image: AssetImage(
+                                                "images/individual.png"),
                                             fit: BoxFit.cover,
                                           ),
                                         ),
                                       ),
                                     ),
                                     SizedBox(height: 10),
-                                    Text("User Guidline",
+                                    Text("TOP BATSMANS",
                                         style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 17,
@@ -150,21 +135,21 @@ class _HomeState extends State<Home> {
                                       child: Container(
                                         width:
                                             MediaQuery.of(context).size.width *
-                                                0.385,
+                                                0.23,
                                         height:
                                             MediaQuery.of(context).size.height *
-                                                0.09,
+                                                0.155,
                                         decoration: BoxDecoration(
                                           image: DecorationImage(
                                             image:
-                                                AssetImage("images/team.jpg"),
+                                                AssetImage("images/bowler.jpg"),
                                             fit: BoxFit.cover,
                                           ),
                                         ),
                                       ),
                                     ),
                                     SizedBox(height: 10),
-                                    Text("Team Perfoamance",
+                                    Text("TOP BOWLERS",
                                         style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 17,
@@ -185,7 +170,7 @@ class _HomeState extends State<Home> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Individual())),
+                                      builder: (context) => Login())),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
                                 height:
@@ -197,21 +182,21 @@ class _HomeState extends State<Home> {
                                       child: Container(
                                         width:
                                             MediaQuery.of(context).size.width *
-                                                0.23,
+                                                0.26,
                                         height:
                                             MediaQuery.of(context).size.height *
-                                                0.135,
+                                                0.13,
                                         decoration: BoxDecoration(
                                           image: DecorationImage(
                                             image: AssetImage(
-                                                "images/individual.png"),
+                                                "images/fielder.png"),
                                             fit: BoxFit.cover,
                                           ),
                                         ),
                                       ),
                                     ),
                                     SizedBox(height: 10),
-                                    Text("Individual Perfomance",
+                                    Text("TOP FIELDERS",
                                         style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 17,
