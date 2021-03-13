@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:psl/Login.dart';
 import 'package:psl/idividual.dart';
 import 'package:psl/batsman.dart';
+import 'package:psl/team.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -138,7 +139,7 @@ class _HomeState extends State<Home> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Batsmans())),
+                                      builder: (context) => Teams())),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
                                 height:

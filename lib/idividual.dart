@@ -4,6 +4,7 @@ import 'package:psl/Login.dart';
 import 'package:psl/fielders.dart';
 import 'package:psl/home.dart';
 import 'package:psl/batsman.dart';
+import 'package:psl/bowler.dart';
 
 class Individual extends StatefulWidget {
   @override
@@ -125,7 +126,7 @@ class _IndividualState extends State<Individual> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => Login())),
+                                      builder: (context) => Bowlers())),
                               child: Container(
                                 width: MediaQuery.of(context).size.width * 0.45,
                                 height:
