@@ -118,12 +118,12 @@ class _LoginState extends State<Login> {
                     child: ElevatedButton(
                       onPressed: () {
                         signIn();
+                        // Navigator.push(context,
+                        //     MaterialPageRoute(builder: (context) => Home()));
                       },
-                      // SignIn,
                       style: ElevatedButton.styleFrom(
                         primary: Colors.green,
                       ),
-
                       child:
                           Text('LOGIN', style: TextStyle(color: Colors.white)),
                     )),
@@ -138,11 +138,9 @@ class _LoginState extends State<Login> {
                             MaterialPageRoute(
                                 builder: (context) => Register()));
                       },
-                      // SignIn,
                       style: ElevatedButton.styleFrom(
                         primary: Colors.green,
                       ),
-
                       child: Text('REGISTER',
                           style: TextStyle(color: Colors.white)),
                     )),
