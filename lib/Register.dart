@@ -59,8 +59,8 @@ class _RegisterState extends State<Register> {
                 ),
                 Center(
                   child: Container(
-                    width: MediaQuery.of(context).size.width * 0.27,
-                    height: MediaQuery.of(context).size.height * 0.23,
+                    width: MediaQuery.of(context).size.width * 0.30,
+                    height: MediaQuery.of(context).size.height * 0.22,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage("images/psl.jpeg"),

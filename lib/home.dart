@@ -95,9 +95,9 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => Guide())),
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 0.45,
+                                width: MediaQuery.of(context).size.width * 0.48,
                                 height:
-                                    MediaQuery.of(context).size.height * 0.235,
+                                    MediaQuery.of(context).size.height * 0.23,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
@@ -142,9 +142,9 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => Teams())),
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 0.45,
+                                width: MediaQuery.of(context).size.width * 0.48,
                                 height:
-                                    MediaQuery.of(context).size.height * 0.235,
+                                    MediaQuery.of(context).size.height * 0.23,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
@@ -189,9 +189,9 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => Individual())),
                               child: Container(
-                                width: MediaQuery.of(context).size.width * 0.45,
+                                width: MediaQuery.of(context).size.width * 0.48,
                                 height:
-                                    MediaQuery.of(context).size.height * 0.235,
+                                    MediaQuery.of(context).size.height * 0.23,
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
